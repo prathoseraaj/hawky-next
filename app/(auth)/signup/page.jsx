@@ -9,20 +9,16 @@ const page = () => {
           alt="logo"
           height={500}
           width={500}
-          className="mt-5"
-        />{" "}
+          className="mt-10 -mb-5"
+        />
       </div>
-      <div className="flex flex-col ml-15 mt-10">
-        <label htmlFor="" className="font-bold text-[20px] ">
-          Email
-        </label>
-        <input type="email" className="w-[380px] h-[30px] border rounded  " />
-
-        <label htmlFor="" className="font-bold text-[20px] ">
-          Password
-        </label>
-        <input type="text" className="w-[380px] h-[30px] border rounded  " />
-      </div>{" "}
+      <h1 className="text-[20px] font-bold ml-15 mt-10 -mb-5">Sign-In</h1>
+      <div className="flex flex-col gap-7 ml-15 mt-10">
+        <input type="email" className="w-[380px] h-[40px] border rounded  pl-5" placeholder="Email" />
+        <input type="text" className="w-[380px] h-[40px] border rounded pl-5  " placeholder="Password" />
+      </div>
+      <p className="ml-15 mt-5 text-[13px] font-bold text-green-600">Forgot Password?</p>
+      <button type="button" className="w-[380px] h-[40px] mt-5 text-white font-bold text-[17px] rounded ml-15 bg-green-500 cursor-pointer" >Login</button>
     </div>
   );
 };
