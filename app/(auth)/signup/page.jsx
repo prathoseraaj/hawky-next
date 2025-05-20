@@ -19,6 +19,14 @@ const page = () => {
       </div>
       <p className="ml-15 mt-5 text-[13px] font-bold text-green-600">Forgot Password?</p>
       <button type="button" className="w-[380px] h-[40px] mt-5 text-white font-bold text-[17px] rounded ml-15 bg-green-500 cursor-pointer" >Login</button>
+
+      <div className="flex flex-row w-[400px] ">
+        <input type="checkbox" name="terms" id="terms" className="ml-15 mt-5  " />
+        <p className="mt-5 text-[12px] ml-2 mt-5 text-gray-500">By countinuing, I agree to the terms of Use & Privacy policy   </p>
+      </div>
+      <div className="ml-15 mt-5 text-[13px]">
+        <p>Create an account?<span className="text-green-500 ml-1 font-bold">click here</span></p>
+      </div>
     </div>
   );
 };
