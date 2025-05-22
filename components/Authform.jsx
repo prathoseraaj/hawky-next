@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Authform = ({ type = "signin", onsumbit, showForgotPassword = true }) => {
-  const isSignUp = (type === "signup");
+  const isSignUp = type === "signup";
 
   const handleSumbit = (e) => {
     e.preventDefalut();
@@ -12,7 +12,7 @@ const Authform = ({ type = "signin", onsumbit, showForgotPassword = true }) => {
   };
 
   return (
-    <div className="h-[70vh] w-[500px] bg-white-100 flex flex-col  bg-white shadow-sm rounded-[20px]">
+    <div className="h-[80vh] w-[500px] bg-white-100 flex flex-col  bg-white shadow-sm rounded-[20px]">
       <div className="items-center">
         <img
           src="/logo.jpeg"
@@ -26,6 +26,12 @@ const Authform = ({ type = "signin", onsumbit, showForgotPassword = true }) => {
         {isSignUp ? "Signup" : "SignIn"}
       </h1>
       <div className="flex flex-col gap-7 ml-15 mt-10">
+        {isSignUp?         <input
+          type="name"
+          className="w-[380px] h-[40px] border rounded  pl-5"
+          placeholder="Your Name"
+        />:<></>}
+
         <input
           type="email"
           className="w-[380px] h-[40px] border rounded  pl-5"
