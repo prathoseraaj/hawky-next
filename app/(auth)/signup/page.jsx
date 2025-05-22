@@ -1,9 +1,21 @@
-import React from 'react'
+"use client";
+import Authform from "@/components/Authform";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>signup</div>
-  )
-}
+  const router = useRouter();
+  const handleSignUp = () => {
+    console.log("SignUp sucessfully.");
+  };
 
-export default page
+  return (
+    <Authform
+      type="signup"
+      onsumbit={handleSignUp}
+      showForgotPassword={false}
+    />
+  );
+};
+
+export default page;
